@@ -31,4 +31,7 @@ name = "android.permission.WRITE_EXTERNAL_STORAGE"
 name = "android.permission.READ_EXTERNAL_STORAGE"
 
 [[package.metadata.android.uses_permission]]
+name = "android.permission.ACCESS_COARSE_LOCATION"
+
+[[package.metadata.android.uses_permission]]
 name = "android.permission.ACCESS_FINE_LOCATION"
