@@ -1,0 +1,15 @@
+export component MainWindow inherits Window {
+    in property <string> gps_text: "Buscando...";
+    width: 300px;
+    height: 150px;
+
+    VerticalLayout {
+        Text {
+            text: root.gps_text;
+            //text-wrap: word;
+            font-size: 18px;
+            horizontal-alignment: center;
+            vertical-alignment: center;
+        }
+    }
+}

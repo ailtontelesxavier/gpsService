@@ -1,0 +1,34 @@
+[package]
+name = "gpsService"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "gpsService"
+crate-type = ["cdylib"]
+
+[dependencies]
+slint = { version = "1.6", features = ["backend-android-activity-06"] }
+ndk = "0.9"
+ndk-context = "0.1"
+android-activity = { version = "0.6", features = ["native-activity"] }
+jni = "0.21"
+android_logger = "0.15.0"
+log = "0.4"
+
+
+[package.metadata.android.sdk]
+min_sdk_version = 23
+target_sdk_version = 31
+
+[[package.metadata.android.uses_permission]]
+name = "android.permission.INTERNET"
+
+[[package.metadata.android.uses_permission]]
+name = "android.permission.WRITE_EXTERNAL_STORAGE"
+
+[[package.metadata.android.uses_permission]]
+name = "android.permission.READ_EXTERNAL_STORAGE"
+
+[[package.metadata.android.uses_permission]]
+name = "android.permission.ACCESS_FINE_LOCATION"
